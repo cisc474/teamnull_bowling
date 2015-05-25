@@ -1,0 +1,55 @@
+body {
+    background-color: #FFFFFF;
+    padding-top:80px;
+} 
+h2 {
+    font-weight:bold;
+    color:rgb(50, 115, 175);
+}
+.hole {
+    border-radius: 50%;
+    border: 2px solid #1F1F1F;
+	width: 100px;
+	height: 100px; 
+}
+
+#leftHole {
+    position: relative;
+    top: 150px;
+    left: 130px;
+}
+
+.leftBox {
+    position: relative;
+    left: 100px;
+    top: 200px;
+}
+
+#leftFullSpan {
+    position: relative;
+    left: 5px;
+}
+
+#rightHole {
+    position: relative;
+    top: 150px;
+    left: 200px;
+}
+
+.rightBox {
+    position: relative;
+    left: 350px;
+    top: 158px;
+}
+
+#rightFullSpan {
+    position: relative;
+    left: 0px;
+}
+
+#bottomHole {
+    position: relative;
+    top: 400px;
+    left: 0px;
+}
+

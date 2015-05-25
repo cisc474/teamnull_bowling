@@ -1,0 +1,26 @@
+#navbar {
+    background-color:rgb(45, 106, 162);
+}
+
+#navbar a {
+    color:rgb(220, 220, 220);
+}
+
+#navbar a:hover {
+    color:rgb(245, 245, 245);
+}
+
+#navbar #brms {
+    color:rgb(220, 220, 220);
+}
+
+#navbar #welcome {
+    color:rgb(220, 220, 220);
+    margin-right: 20px;
+}
+#navbar #dash{
+    margin-right: 20px;
+}
+#brown {
+    backgruond-color:red;
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <title>Ball Records Management System</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/dashboard2.css" type="text/css" />
+</head>
+
+<body>
+    <div class = "panel" id="register">
+        <h3 class="header">Register New Customer</h3>
+        <form role="form">
+            <input type="text" class="form-control" placeholder="first name" ng-model="customer.firstName">
+            <input type="text" class="form-control" placeholder="last name" ng-model="customer.lastName">
+            <input type="text" class="form-control" placeholder="street" ng-model="customer.street">
+            <input type="text" class="form-control" placeholder="city" ng-model="customer.city">
+            <input type="text" class="form-control" placeholder="state" ng-model="customer.state">
+            <input type="text" class="form-control" placeholder="zip code" ng-model="customer.zip">
+            <input type="text" class="form-control" placeholder="home phone" ng-model="customer.homePhone">
+            <input type="text" class="form-control" placeholder="cell phone" ng-model="customer.cellPhone">
+            <input type="text" class="form-control" placeholder="email" ng-model="customer.email">
+                
+            <input type="submit" id="bacon" class="btn btn-primary" value="Register" ng-click="newCustomer(customer)" data-ng-disabled="loginForm.$invalid">
+        </form>
+    </div>
+    <div class = "panel" id="search">
+        <h3 class="header">Find Existing Customer</h3>
+        <form role="form">
+            <input type="text" class="form-control" id="name" placeholder="first name" ng-model="cust.firstName">
+            <input type="text" class="form-control" id="name"placeholder="last name" ng-model="cust.lastName">
+            <input type="submit" id="bacon2" class="btn btn-primary" value="Search" ng-click="search(cust)" data-ng-disabled="loginForm.$invalid">
+        </form>
+        <table class="records" ng-show="(records | filter:criteria).length">
+            <tr>
+                <td>Name</td>
+                <td>Street</td>
+                <td>City</td>
+                <td>State</td>
+                <td>Phone</td>
+                <td>Email</td>
+                <td>Edit</td>
+            </tr>
+            <tr ng-repeat="record in records">
+                <td>{{record['firstName']}} {{record['lastName']}}</td>
+                <td>{{record['street']}}</td>
+                <td>{{record['city']}}</td>
+                <td>{{record['state']}}</td>
+                <td>{{record['homePhone']}}</td>
+                <td><a href="mailto:{{record['email']}}" target="_top">{{record['email']}}</a></td>
+                <td><a class="glyphicon glyphicon-ok" ng-click="visitCustomer(record)"></a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

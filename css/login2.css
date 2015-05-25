@@ -1,0 +1,59 @@
+body { padding-top:80px; }
+
+.form-group{
+    text-align:left;
+    margin-bottom:8px;
+}
+.form-control{
+    width:210px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#bacon1 {
+    background-color:rgb(50, 115, 175);
+    display:block;
+    width:43%;
+    position: relative;
+    float:left;
+}
+#bacon2 {
+    background-color:rgb(50, 115, 175);
+    display:block;
+    width:43%;
+    position: relative;
+    float:right;
+}
+#bacon1:hover {
+       background-color:rgb(66, 139, 202); 
+}
+#bacon2:hover {
+       background-color:rgb(66, 139, 202); 
+}
+.buttons {
+    width:20%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:red;
+}
+.jumbotron{
+    background-color:white;
+}
+#acronym{
+    font-size:74px;
+    font-weight:bold;
+    color:rgb(45, 106, 162);
+    margin:0;
+    padding:0px;
+    overflow:hidden;
+    line-height:0.85;
+}
+p{
+    font-size:17.5px;
+    margin:0;
+    padding:0;
+}
+#system{
+    margin-bottom:10px;
+}
