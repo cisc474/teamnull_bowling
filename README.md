@@ -1,1 +1,0 @@
-# teamnull_statistics
